@@ -20,7 +20,7 @@ const AddTodo = ({ onAddTodo }) => {
             <button
                 type="submit">
                     Agregar
-                </button>
+            </button>
         </form>
     );
 }; 

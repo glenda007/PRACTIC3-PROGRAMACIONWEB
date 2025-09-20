@@ -19,7 +19,7 @@ const TodoApp = () => {
         }
     };
 
-    const ToggleTodo = (id) => {
+    const toggleTodo = (id) => {
         setTodos(todos.map(todo => 
             todo.id === id ? { ...todo, completed: !todo.completed } : todo
         ));
@@ -42,7 +42,7 @@ const TodoApp = () => {
             <TodoFilter currentFilter={filter} onFilterChange={setFilter} />
             <TodoList 
                 todos={filteredTodos}
-                onToggleTodo={ToggleTodo}
+                onToggleTodo={toggleTodo}
                 onDeleteTodo={deleteTodo}
             />
         </div>

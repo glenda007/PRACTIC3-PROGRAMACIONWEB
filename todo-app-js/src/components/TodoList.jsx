@@ -1,6 +1,6 @@
 import TodoItem from './TodoItem'
 
-const TodoList = ({ todos, onToggle, onDelete }) => {
+const TodoList = ({ todos, onToggleTodo, onDeleteTodo }) => {
     return (
         <div className="todo-list">
             {todo.length === 0 ? (
@@ -10,8 +10,8 @@ const TodoList = ({ todos, onToggle, onDelete }) => {
                     <TodoItem 
                         key={todo.id}
                         todo={todo}
-                        onToggle={onToggle}
-                        onDelete={onDelete}
+                        onToggle={onToggleTodo}
+                        onDelete={onDeleteTodo}
                     />
                 ))
             )}
