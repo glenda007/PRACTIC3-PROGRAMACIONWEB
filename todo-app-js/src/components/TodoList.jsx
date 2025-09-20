@@ -3,7 +3,7 @@ import TodoItem from './TodoItem'
 const TodoList = ({ todos, onToggleTodo, onDeleteTodo }) => {
     return (
         <div className="todo-list">
-            {todo.length === 0 ? (
+            {todos.length === 0 ? (
                 <p>No hay tareas por mostrar</p>
             ) : (
                 todos.map(todo => (
