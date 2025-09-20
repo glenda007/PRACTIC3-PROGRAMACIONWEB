@@ -2,7 +2,7 @@ import { useState } from 'react'
 import TodoList from './TodoList'
 import TodoFilter from './TodoFilter'
 import AddTodo from './AddTodo'
-import './App.css'
+import '../App.css'
 
 const TodoApp = () => {
     const [todos, setTodos] = useState([]);
