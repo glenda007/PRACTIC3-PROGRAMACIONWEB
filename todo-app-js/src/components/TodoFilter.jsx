@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TodoFilter = ({ currentFilter, onFilterChange }) => {
     const filters = [
         {key: 'all', label: 'Todas'},
